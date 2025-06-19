@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AL Tecnologias</title>
+
+  <!-- Font Awesome para ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css" />
+  <!-- AOS para animações -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header data-aos="fade-down">
@@ -24,7 +27,11 @@
 
   <section id="historia" data-aos="fade-up">
     <h2>História da Empresa</h2>
-    <p style="text-align:center; max-width: 700px; margin: auto;">A AL Tecnologias nasceu com o propósito de entregar soluções inovadoras para empresas que desejam se destacar no mundo digital. Desde o início, buscamos unir criatividade, performance e tecnologia de ponta em cada projeto realizado.</p>
+    <p class="centered-text">
+      A AL Tecnologias nasceu com o propósito de entregar soluções inovadoras
+      para empresas que desejam se destacar no mundo digital. Desde o início,
+      buscamos unir criatividade, performance e tecnologia de ponta em cada projeto realizado.
+    </p>
   </section>
 
   <section id="socios" data-aos="fade-right">
@@ -34,11 +41,13 @@
         <img src="eu.jpg" alt="Sócio 1">
         <h3>Ana Lima</h3>
         <p>Especialista em design de interfaces e experiências digitais.</p>
+        <a href="https://linkedin.com/in/ana-lima" target="_blank" class="linkedin-link">LinkedIn</a>
       </div>
       <div class="card" data-aos="zoom-in" data-aos-delay="100">
         <img src="eu.jpg" alt="Sócio 2">
         <h3>Lucas Ribeiro</h3>
         <p>Desenvolvedor full stack com foco em aplicações escaláveis e modernas.</p>
+        <a href="https://linkedin.com/in/lucas-ribeiro" target="_blank" class="linkedin-link">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -71,35 +80,27 @@
     </form>
   </section>
 
-    <!-- Redes sociais fixas no canto inferior direito -->
+  <!-- Redes sociais fixas -->
   <div class="social-fixed">
-    <a href="https://instagram.com/seuusuario" target="_blank" aria-label="Instagram" class="social-btn insta" rel="noopener noreferrer">
+    <a href="https://instagram.com/seuusuario" target="_blank" class="social-btn insta" aria-label="Instagram" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp" class="social-btn whatsapp" rel="noopener noreferrer">
+    <a href="https://wa.me/5511999999999" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp" rel="noopener noreferrer">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
-
 
   <footer data-aos="fade-in">
     <p>&copy; 2025 AL Tecnologias. Todos os direitos reservados.</p>
   </footer>
 
-
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
 
-    ScrollReveal().reveal('section', {
-      origin: 'bottom',
-      distance: '50px',
-      duration: 800,
-      easing: 'ease-in-out',
-      interval: 150
-    });
-
-    document.getElementById('contatoForm').addEventListener('submit', async function(e) {
+    // Envio do formulário
+    document.getElementById('contatoForm').addEventListener('submit', async function (e) {
       e.preventDefault();
       const nome = document.getElementById('nome').value;
       const email = document.getElementById('email').value;
