@@ -1,0 +1,9 @@
+<svg width="320" height="80" viewBox="0 0 320 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cubo 3D -->
+  <polygon points="20,20 50,5 80,20 80,55 50,70 20,55" fill="#0f72f0" />
+  <polygon points="50,5 80,20 80,55 50,70" fill="#3a94ff" />
+  <polygon points="20,20 50,35 50,70 20,55" fill="#0660d8" />
+  
+  <!-- Texto -->
+  <text x="100" y="50" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-weight="700" font-size="36" fill="#0f72f0">AL Tecnologias</text>
+</svg>

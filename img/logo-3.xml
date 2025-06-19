@@ -1,0 +1,13 @@
+<svg width="320" height="80" viewBox="0 0 320 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circuito com nós -->
+  <circle cx="30" cy="40" r="25" stroke="#0f72f0" stroke-width="4" />
+  <circle cx="20" cy="40" r="6" fill="#0f72f0" />
+  <circle cx="40" cy="20" r="6" fill="#0f72f0" />
+  <circle cx="40" cy="60" r="6" fill="#0f72f0" />
+  <line x1="30" y1="40" x2="20" y2="40" stroke="#0f72f0" stroke-width="3" />
+  <line x1="30" y1="40" x2="40" y2="20" stroke="#0f72f0" stroke-width="3" />
+  <line x1="30" y1="40" x2="40" y2="60" stroke="#0f72f0" stroke-width="3" />
+  
+  <!-- Texto -->
+  <text x="90" y="50" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-weight="700" font-size="36" fill="#0f72f0">AL Tecnologias</text>
+</svg>

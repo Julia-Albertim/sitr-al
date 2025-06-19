@@ -1,0 +1,16 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ícone estilo circuito -->
+  <g fill="none" stroke="#0D6EFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="30" cy="40" r="10" />
+    <line x1="40" y1="40" x2="80" y2="40" />
+    <circle cx="90" cy="40" r="10" />
+    <line x1="90" y1="30" x2="90" y2="10" />
+    <circle cx="90" cy="10" r="5" />
+    <line x1="80" y1="40" x2="80" y2="70" />
+    <circle cx="80" cy="70" r="7" />
+  </g>
+  <!-- Texto -->
+  <text x="120" y="50" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="36" fill="#0D6EFD" font-weight="700">
+    AL Tecnologias
+  </text>
+</svg>

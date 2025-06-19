@@ -1,0 +1,7 @@
+<svg width="320" height="140" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Texto AL centralizado -->
+  <text x="50%" y="70" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-weight="900" font-size="72" fill="#0f72f0">AL</text>
+
+  <!-- Texto Tecnologias abaixo -->
+  <text x="50%" y="110" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-weight="600" font-size="28" fill="#3a94ff">Tecnologias</text>
+</svg>
