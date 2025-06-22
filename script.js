@@ -92,17 +92,15 @@ class Navigation {
     });
   }
 
-  setupScrollEffect() {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        this.navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        this.navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-      } else {
-        this.navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        this.navbar.style.boxShadow = 'none';
-      }
-    });
-  }
+setupScrollEffect() {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      this.navbar.classList.add('scrolled');
+    } else {
+      this.navbar.classList.remove('scrolled');
+    }
+  });
+}
 }
 
 // Toggle de tema
@@ -130,15 +128,14 @@ class ThemeToggle {
       this.updateThemeIcon(newTheme);
     });
   }
-
-  updateThemeIcon(theme) {
-    if (theme === 'dark') {
-      this.themeIcon.className = 'fas fa-sun';
-    } else {
-      this.themeIcon.className = 'fas fa-moon';
-    }
+updateThemeIcon(theme) {
+  this.themeIcon.className = 'fas fa-circle-half-stroke';
+  if (theme === 'dark') {
+    this.themeIcon.style.transform = 'scaleX(-1)'; // inverte o lado
+  } else {
+    this.themeIcon.style.transform = 'scaleX(1)';
   }
-}
+}}
 
 // Sistema de notificações bonito
 class NotificationSystem {

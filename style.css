@@ -117,7 +117,9 @@ body {
 .skip-link:focus {
   top: 6px;
 }
-
+header {
+  height: 650px;
+}
 /* Container */
 .container {
   max-width: 1200px;
@@ -128,7 +130,7 @@ body {
 /* Toggle de tema */
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   background: var(--gradient-primary);
   border: none;
@@ -162,6 +164,19 @@ body {
 [data-theme="dark"] .navbar {
   background: rgba(15, 23, 42, 0.95);
 }
+
+.navbar.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(15, 23, 42, 0.95);
+}
+
 
 .nav-container {
   max-width: 1200px;
@@ -204,10 +219,7 @@ body {
   background: var(--primary-50);
 }
 
-[data-theme="dark"] .nav-link:hover,
-[data-theme="dark"] .nav-link.active {
-  background: var(--primary-900);
-}
+
 
 .nav-link::after {
   content: '';
@@ -253,14 +265,24 @@ body {
 
 /* Hero com gradiente bonito */
 .hero {
-  background: var(--gradient-hero);
-  color: white;
-  padding: 150px 0 100px;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  height: 650px;           /* já tem no seu header */
   text-align: center;
-  margin-top: 70px;
+  padding: 0 20px;         /* pode manter o padding */
   position: relative;
   overflow: hidden;
+  background: var(--gradient-hero);
+  color: white;
+  margin-top: 70px;
 }
+
+/* Remove o padding top e bottom do hero que você tinha */
+.hero {
+  padding: 0; /* para usar flex melhor */
+}
+
 
 .hero::before {
   content: '';
@@ -274,10 +296,9 @@ body {
 }
 
 .hero .container {
-  position: relative;
-  z-index: 1;
+  padding: 0 20px;
+  max-width: 1200px;
 }
-
 .hero h1 {
   font-size: 4rem;
   font-weight: 800;
@@ -444,6 +465,7 @@ body {
 .portfolio .card {
   padding: 0;
   overflow: hidden;
+  
 }
 
 .portfolio .card img {
@@ -463,6 +485,7 @@ body {
 .portfolio .card h4,
 .portfolio .card p {
   padding: 0 2rem;
+  margin: 1rem 0;
 }
 
 .portfolio .card p {
